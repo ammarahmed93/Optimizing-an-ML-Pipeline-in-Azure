@@ -16,7 +16,7 @@ The best performaing model was the VotingEnsemble from the AutoML with an accura
 
 ![image](https://user-images.githubusercontent.com/43079200/116450716-00c9fa00-a832-11eb-9e95-5bdc8d96bc4e.png)
 
-
+[C=0.14533, max_iter=150]
 ## AutoML
 
 
