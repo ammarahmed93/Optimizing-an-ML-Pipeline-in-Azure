@@ -12,6 +12,9 @@ The best performaing model was the VotingEnsemble from the AutoML with an accura
 
 ## Scikit-learn Pipeline
 
+![image](https://user-images.githubusercontent.com/43079200/116450659-ef80ed80-a831-11eb-8b89-d94c1750dccf.png)
+
+![image](https://user-images.githubusercontent.com/43079200/116450716-00c9fa00-a832-11eb-9e95-5bdc8d96bc4e.png)
 
 
 ## AutoML
