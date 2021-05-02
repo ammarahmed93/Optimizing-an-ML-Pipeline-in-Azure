@@ -23,7 +23,7 @@ The best performaing model was the VotingEnsemble from the AutoML with an accura
 
 ## Scikit-learn Pipeline
 ### Pipeline architecture
-![Diagram](mages/pipeline_architect.png?raw=true)
+![Diagram](images/pipeline_architect.png?raw=true)
 
 **Data preparation** <br>
 The _TabularDatasetFactory_ method was used to create and register the tabular dataset. Then, the data was prepared and NaNs were dropped. The _OneHotEncoder_ was applied to encode the categorical data. Lastly, the data was split into train and test (70/30).
