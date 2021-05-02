@@ -26,7 +26,7 @@ The best performaing model was the VotingEnsemble from the AutoML with an accura
 ![Diagram](images/pipeline_architect.png?raw=true)
 
 **Data preparation** <br>
-The _TabularDatasetFactory_ method was used to create and register the tabular dataset. Then, the data was prepared and NaNs were dropped. The _OneHotEncoder_ was applied to encode the categorical data. Lastly, the data was split into train and test (70/30).
+The _TabularDatasetFactory_ method was used to create the tabular dataset. Then, the data was prepared and NaNs were dropped. The _OneHotEncoder_ was applied to encode the categorical data. Lastly, the data was split into train and test (70/30).
 
 **Classification algorithm** <br>
 The logistic regression was used for the binary classification. It uses the sigmoid function to model the probablity of the binary class (i.e Yes/No). Two hyperparameters were tuned: C and max iterations. The 'C' is the inverse of the regularization strength and smaller values specify stronger regularization. Regularization is used to mitigate the overfitting problem. The max iteration paramter specifies the the maximum the number of iterations taken for the solver to converge.
