@@ -29,10 +29,10 @@ The best performaing model was the VotingEnsemble from the AutoML with an accura
 The _TabularDatasetFactory_ method was used to create the tabular dataset. Then, the data was prepared and NaNs were dropped. The _OneHotEncoder_ was applied to encode the categorical data. Lastly, the data was split into train and test (70/30).
 
 **Classification algorithm** <br>
-The logistic regression was used for the binary classification. It uses the sigmoid function to model the probablity of the binary class (i.e Yes/No). Two hyperparameters were tuned: C and max iterations. The 'C' is the inverse of the regularization strength and smaller values specify stronger regularization. Regularization is used to mitigate the overfitting problem. The max iteration paramter specifies the the maximum the number of iterations taken for the solver to converge.
+The logistic regression was used for the binary classification. It uses the sigmoid function to model the probablity of the binary class (i.e Yes/No). Two hyperparameters were tuned: C and max iterations. The 'C' is the inverse of the regularization strength and smaller values specify stronger regularization. Regularization is used to mitigate the overfitting problem. The max iteration parameter specifies the maximum the number of iterations taken for the solver to converge.
 
 **HyperDrive** <br>
-The HyperDrive is a configuration that defines a HyperDrive run. This is includes information such as hyperparamter space sampling, termination policy, primary metric ...etc. The HyperDrive was defined in the notebook which then invoke the model defined in the train.py and start tuning the hyperparameters within the notebook by passing the defined arguments. 
+The HyperDrive is a configuration that defines a HyperDrive run. This includes information such as hyperparameter space sampling, termination policy, primary metric ...etc. The HyperDrive was defined in the notebook which then invoke the model defined in the train.py and start tuning the hyperparameters within the notebook by passing the defined arguments. 
 ```
 # Create a SKLearn estimator for use with train.py
 est = SKLearn(source_directory=".", compute_target=cpu_compute_target, entry_script="train.py")
