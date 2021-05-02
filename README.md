@@ -100,7 +100,7 @@ The votingEnsemble is a powerful model as it combines predictions from multiple 
 The data is currently imbalance as shown in the figure below. This could be a problem for most models. For future work, we can try to upsample minority class through SMOTE or downsample the majority class.
 ![Diagram](images/data_imbalance.png?raw=true)
 <br>
-Another improvement could be trying to fine tune the hyperparameter for the HyperDrive run by using the Grid sampling. Experimenting with max iteration (increase the value) for the logistic regression as well as experimenting with ealry stopping could potentially yield to a better HyperDrive model.  
+Another improvement could be trying to fine tune the hyperparameter for the HyperDrive run by using the Grid sampling. Experimenting with max iteration (increase the value) for the logistic regression as well as experimenting with early stopping could potentially yield to a better HyperDrive model.  
 
 ## Proof of cluster clean up
 The following command was used at the end of the notebook to delete the cluster and free up the resources.
