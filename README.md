@@ -19,7 +19,7 @@ The diagram below shows the full overview of the project.
 
 ## Summary
 The dataset provided contains data related to a direct marketing campaign for a bank. The goal is to predict if a client will subsrcibe a term deposit or not (i.e a binary classification). There are 20 features (columns) in total which includes customers age, job, maritual...etc. and the target column "y" which is a "Yes" or "No" that needs to be encoded to 0 and 1. The original dataset can be found [here](https://archive.ics.uci.edu/ml/datasets/bank+marketing). <br> <br>
-The best performaing model was the VotingEnsemble from the AutoML with an accuracy of 0.91709 which is slightly higher than the logistic regression (tuned with Hyperdrive) which had and accuracy of 0.9097.
+The best performaing model was the VotingEnsemble from the AutoML with an accuracy of 0.9178 which is slightly higher than the logistic regression (tuned with Hyperdrive) which had and accuracy of 0.9097.
 
 ## Scikit-learn Pipeline
 ### Pipeline architecture
