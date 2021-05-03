@@ -22,7 +22,7 @@ The dataset provided contains data related to a direct marketing campaign for a 
 The best performaing model was the VotingEnsemble from the AutoML with an accuracy of 0.9178 which is slightly higher than the logistic regression (tuned with Hyperdrive) which had and accuracy of 0.9097.
 
 ## Scikit-learn Pipeline
-### Pipeline architecture
+### Pipeline 
 ![Diagram](images/pipeline_architect.png?raw=true)
 
 **Data preparation** <br>
