@@ -97,11 +97,13 @@ The votingEnsemble is a powerful model as it combines predictions from multiple 
 
 
 ## Future work
-The data is currently imbalance as shown in the figure below. This could be a problem for most models. For future work, we can try to upsample minority class through SMOTE or downsample the majority class.
+* The data is currently imbalance as shown in the figure below. This could be a problem for most models. For future work, we can try to upsample minority class through SMOTE or downsample the majority class.
 ![Diagram](images/data_imbalance.png?raw=true)
-<br>
-Another improvement could be trying to fine tune the hyperparameter for the HyperDrive run by using the Grid sampling. Experimenting with max iteration (increase the value) for the logistic regression as well as experimenting with early stopping could potentially yield to a better HyperDrive model.  
-
+* Another improvement could be trying to fine tune the hyperparameter for the HyperDrive run by using the Grid sampling. Experimenting with max iteration (increase the value) for the logistic regression as well as experimenting with early stopping could potentially yield to a better HyperDrive model.  
+* Experimentation can ran for longer duratopm by increasing the time limit _experiment_timeout_minutes_ in the AutoML configuration. Similarly, we can increase the value of _max_total_runs_ in the HyperDrive to increase the duration of the experiment. Increasing the duration of the experiment would potentially yield to a better model score.
+* Range of the HyperDrive paramter can be increased allowing wider selection of paramter would potentialy yield to a better results for the HyperDrive model.
+* Inculde _Deep Learning_ algorithm in the AutoML configuration to allow wider selection of algorithm to evaluate the accuracy.
+* Compute time of the expriments can be improved by adding more CPU cluster to compute cluster instance or configurating a GPU cluster.
 ## Proof of cluster clean up
 The following command was used at the end of the notebook to delete the cluster and free up the resources.
 ```
